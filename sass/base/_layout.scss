@@ -1,0 +1,82 @@
+$max-width: 1000px;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	background: $color-background;
+    color: $color01;
+	@media screen and (max-width: 1040px){
+		margin: 0 20px;
+	}
+	@media screen and (max-width: 600px){
+		font-size: 13px;
+		margin: 0 20px;
+	}
+}
+
+h1{
+	margin: 35px 0 15px 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+h2{
+	margin: 20px 0 10px 0;
+	font-size: 22px;
+	font-weight: bold;
+	border-bottom: 1px solid $color06;
+}
+h3{
+
+	font-size: 19px;
+	line-height: 1.2;
+	margin: 1.2em 0 0 0;
+	font-weight: normal;
+	display: block;
+	@media screen and (max-width: 620px) {
+	font-size: 15px;
+		}
+	}
+ul{
+	padding-bottom: 5px;
+}
+li{
+	margin: 0 10px 2px 5px;
+}
+
+a {
+ 	text-decoration:none;
+	color:$color-link;
+	-webkit-transition:border .25s linear;
+	-moz-transition:border .25s linear;
+	-ms-transition:border .25s linear;
+	transition:border .25s linear;
+	outline:none;
+}
+
+a:hover {
+	color: $color-link-hover;
+	//border-bottom:1px solid;
+}
+
+.alignleft{
+	float: left;
+}
+.alignright{
+	float: right;
+}
+.clearfix{
+	@include pie-clearfix;
+}
+.inner{
+	width: $max-width;
+	margin: 0 auto;
+	@media screen and (max-width: 1040px){
+		width: 100%;
+	}
+}
