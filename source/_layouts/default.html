@@ -3,7 +3,7 @@
 
 
 <body>
-	<header id="header" class="inner">{% include header.html %}</header>
+	<header id="header">{% include header.html %}</header>
 
 	<div id="content" class="inner">{{ content | expand_urls: root_url }}</div>
 	<footer id="footer" class="inner">{% include footer.html %}</footer>

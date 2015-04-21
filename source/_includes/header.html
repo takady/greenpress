@@ -1,4 +1,8 @@
-<a href="{{ root_url }}/"><h1>{{ site.title }}</h1></a>
-<nav id="main-nav">{% include navigation.html %}</nav>
 
-{% include custom/header.html %}
+<div class="inner">
+  <ul class="navigation">
+    <li><a href="{{ root_url }}/"><h1>{{ site.title }}</h1></a></li>
+    <li><a href="{{ root_url }}/" class="is-selected">Blog</a></li>
+    <li><a href="http://github.com/{{ site.github_user }}" target="blank">Github</a></li>
+  </ul>
+</div>

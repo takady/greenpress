@@ -1,7 +1,3 @@
-<div class="meta">
-	<div class="date">{% include post/date.html %}{{ time }}</div>
-</div>
-
 {% if index %}
 	<h2 class="title">
 		{% if post.external-url %}
@@ -11,6 +7,9 @@
 		{% endif %}
 			{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
 	</h2>
+	<div class="meta">
+		<div class="date">{% include post/date.html %}{{ time }}</div>
+	</div>
 	<div class="entry-content">
 		{{ content | excerpt }}
 		{% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
@@ -18,6 +17,9 @@
 	</div>
 {% else %}
 	<h2 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
+	<div class="meta">
+		<div class="date">{% include post/date.html %}{{ time }}</div>
+	</div>
 	<div class="entry-content">{{ content }}</div>
 {% endif %}
 
