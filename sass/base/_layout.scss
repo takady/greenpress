@@ -10,13 +10,9 @@ body{
 	font-weight: 300;
 	line-height: 1.5;
 	background: $color-background;
-    color: $color01;
-	@media screen and (max-width: 1040px){
-		margin: 0 20px;
-	}
+	color: $color01;
 	@media screen and (max-width: 600px){
 		font-size: 13px;
-		margin: 0 20px;
 	}
 }
 
@@ -77,6 +73,6 @@ a:hover {
 	width: $max-width;
 	margin: 0 auto;
 	@media screen and (max-width: 1040px){
-		width: 100%;
+		width: 80%;
 	}
 }

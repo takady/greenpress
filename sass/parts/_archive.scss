@@ -39,6 +39,9 @@
 			padding-bottom: 0px;
 			font-weight: normal;
 			font-size: 25px;
+			@media screen and (max-width: 620px){
+				font-size: 20px;
+			}
 		}
 		.meta{
 			color: $color01;

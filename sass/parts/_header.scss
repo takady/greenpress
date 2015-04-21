@@ -28,6 +28,9 @@ $header-height: 30px;
 		font-weight: bold;
 		font-size: 22px;
 		display: inline-block;
+		@media screen and (max-width: 620px){
+			font-size: 20px;
+		}
 	}
 	ul li {
 		display: inline-block;
